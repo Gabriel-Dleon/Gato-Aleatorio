@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gato aleatorio</title>
+	<link rel="stylesheet" href="styles.css">	
+</head>
+<body>
+	<h1>Gato aleatorio</h1>
+	<span id="Error"></span>
+	<legend>Recarga la pagina para ver nuevas fotos</legend>
+	<section id="Gatos_al_azar">
+		<h2>Fotos nuevas</h2>
+		<article>
+			<img id="img1" alt="Imagen aleatoria de un gato">
+			<button id="boton1" onclick="savefavourites()">Añadir a favoritos</button>
+		</article>
+		<article>
+			<img id="img2" alt="Imagen aleatoria de un gato">
+			<button id="boton2" onclick="savefavourites()">Añadir a favoritos</button>
+		</article>
+		<article>
+			<img id="img3" alt="Imagen aleatoria de un gato">
+			<button id="boton3" onclick="savefavourites()">Añadir a favoritos</button>
+		</article>
+			<button onclick="loadrandomcats()">Recargar</button>
+		
+	</section>
+	<section id="subirfoto">
+		<h2>Sube la foto de un gato</h2>
+		<form id="uploadingcat">
+			<input id="file" type="file" name ="file">
+			<button type="button" onclick="uploadphoto()">Subir foto</form>
+		</form>
+	</section>
+	<script src="./main.js"></script>
+	<section id="favoritos">
+		<h2>Fotos favoritas</h2>
+		<article>
+			<img id="imgfav" alt="Imagen favorita">
+			<button>Eliminar de favoritos</button>
+		</article>
+	</section>
+</body>
+</html>

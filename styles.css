@@ -1,0 +1,23 @@
+img
+{
+	width: 500px;
+	height: 500px;
+	margin-top: 20px;
+	border: solid 2px black;
+	margin-left: 100px;
+}
+
+h1,h2,legend,article,section
+{
+	text-align: center;
+}
+
+body
+{
+	background-color: chocolate;
+}
+
+button,input
+{
+	border: solid 2px black;
+}
