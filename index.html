@@ -8,31 +8,33 @@
 	<link rel="stylesheet" href="styles.css">	
 </head>
 <body>
-	<h1>Gato aleatorio</h1>
+	<header>
+	<h1>Bienvenido a Gato aleatorio</h1>
 	<span id="Error"></span>
-	<legend>Recarga la pagina para ver nuevas fotos</legend>
+	<legend>Un nuevo gato para cada día</legend>
+	<span id="autor"><a href="https://github.com/Gabriel-Dleon">Hecho por Gabriel D'león<img id="github" src="github.png"/></a></span>
+	</header>
+<h2>Fotos nuevas</h2>
 	<section id="Gatos_al_azar">
-		<h2>Fotos nuevas</h2>
 		<article>
 			<img id="img1" alt="Imagen aleatoria de un gato">
-			<button id="boton1" onclick="savefavourites()">Añadir a favoritos</button>
+			<button id="boton1" onclick="savefavourites()"><img id="corazon1" src="Corazon.png"/></button>
 		</article>
 		<article>
 			<img id="img2" alt="Imagen aleatoria de un gato">
-			<button id="boton2" onclick="savefavourites()">Añadir a favoritos</button>
+			<button id="boton2" onclick="savefavourites()"><img id="corazon2" src="Corazon.png"/></button>
 		</article>
 		<article>
 			<img id="img3" alt="Imagen aleatoria de un gato">
-			<button id="boton3" onclick="savefavourites()">Añadir a favoritos</button>
+			<button id="boton3" onclick="savefavourites()"><img id="corazon3" src="Corazon.png"/></button>
 		</article>
-			<button onclick="loadrandomcats()">Recargar</button>
-		
 	</section>
+	<button id="recargar" onclick="loadrandomcats()"><img id="recargar" src="Recargar.png"/></button>
 	<section id="subirfoto">
 		<h2>Sube la foto de un gato</h2>
 		<form id="uploadingcat">
-			<input id="file" type="file" name ="file">
-			<button type="button" onclick="uploadphoto()">Subir foto</form>
+			<input id="file" type="file" name ="file" placeholder="Añade la imagen de un gato" accept="image/*">
+			<button id="anadir" type="button" onclick="uploadphoto()"><img id="anadir" src="anadir.png"/></button>
 		</form>
 	</section>
 	<script src="./main.js"></script>
@@ -40,7 +42,7 @@
 		<h2>Fotos favoritas</h2>
 		<article>
 			<img id="imgfav" alt="Imagen favorita">
-			<button>Eliminar de favoritos</button>
+			<button id="basura" onclick="deletephoto()"><img id="basura" src="basura.jpg" alt="Eliminar foto"/></button>
 		</article>
 	</section>
 </body>

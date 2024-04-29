@@ -56,9 +56,13 @@ async function loadfavourites()
 		{
 			const article = document.createElement('article');
 			const img = document.createElement('img');
+			img.id = "fave"
 			const button = document.createElement('button');
-			const buttonText = document.createTextNode('Eliminar de favoritos');
-			button.appendChild(buttonText);
+			button.id = "basura"
+			const logo = document.createElement('img')
+			logo.id = "basura"
+			logo.src= "basura.png"
+			button.appendChild(logo);
 			img.src = gato.image.url;
 			button.onclick = () => deletefavourites(gato.id);
 			article.appendChild(img);
@@ -145,3 +149,5 @@ loadrandomcats();
 loadfavourites();
 
 //'https://api.thecatapi.com/v1/images/search?limit=3&api_key=live_zyKHSLe2MaxZQbNZWeLTPwyqhxZRvoqKH7tVl3nACHyWf7UMB4XeMRIRmZlMZF77';
+
+document.getElementById('file').defaultValue = "Sube una foto de un gato"
